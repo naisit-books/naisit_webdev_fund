@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", helvetica, sans-serif;
+    font-size: 10px;
+}
+
+/* 
+    lowering font, line height and margins 
+    so that the row height is not affected
+*/ 
+h1 {
+    color: black;
+    font-size: 16px;
+    line-height: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* an easy way to turn on all borders for debugging */ 
+/* table, tbody, tr, td, thead, th {
+    border: 1px solid black;
+} */
+
+/*
+    this <section> wraps the periodic-table.
+    use flexboxes to centre the table on page.
+*/
+.periodic-table-section {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+/*
+    this is the periodic <table> itself.
+*/
+.periodic-table {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*
+    square up all the cells. 
+    add uneven top/bottom vs right/left padding 
+    becuase there are 2 lines present in each 
+    element cell that stretch it long, while we want
+    to retain a square shape. 
+*/
+.periodic-table td {
+    width: 30px;
+    height: 30px;
+    padding: 8px 11px;
+}
+
+/*
+    Set the colours of each element group
+*/ 
+.periodic-table .alkmetal {         background-color: #234D57;}
+.periodic-table .alkearthmetal {    background-color: #612E38;}
+.periodic-table .nide {             background-color: #b65927;}
+.periodic-table .transmetal {       background-color: #433C65;}
+.periodic-table .metalloid {        background-color: #c79810;}
+.periodic-table .postransmetal {    background-color: #2F4D47;}
+.periodic-table .rnonmental {       background-color: #4970b3;}
+.periodic-table .ngas {             background-color: #c75f77;}
+.periodic-table .mystery {          background-color: #46474C;}

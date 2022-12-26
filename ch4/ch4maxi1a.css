@@ -1,0 +1,20 @@
+.talk-bubble {
+	position: relative;
+}
+
+/* 
+	Creates the small triangle for the talk-bubble on its 
+	top left side
+
+	DO NOT MODIFY
+*/
+.triangle.left-top:after{
+	content: ' ';
+	position: absolute;
+	left: -20px;
+	right: auto;
+	top: 0px;
+	bottom: auto;
+	border: 22px solid;
+	border-color: #F0F2F5 transparent transparent transparent;
+}
